@@ -1,13 +1,21 @@
 {
-  "name": "todo",
-  "version": "1.0.0",
-  "main": "index.js",
-  "author": "ihgrant",
-  "license": "MIT",
-  "devDependencies": {
-    "html-webpack-plugin": "^2.29.0",
-    "ts-loader": "^2.3.0",
-    "typescript": "^2.4.1",
-    "webpack": "^3.3.0"
-  }
+    "name": "todo",
+    "version": "1.0.0",
+    "main": "index.js",
+    "author": "ihgrant",
+    "license": "MIT",
+    "devDependencies": {
+        "html-webpack-plugin": "^2.29.0",
+        "ts-loader": "^2.3.0",
+        "typescript": "^2.4.1",
+        "webpack": "^3.3.0",
+        "webpack-dev-server": "^2.5.1"
+    },
+    "scripts": {
+        "start": "webpack-dev-server --open"
+    },
+    "dependencies": {
+        "pako": "^1.0.5",
+        "qs": "^6.5.0"
+    }
 }
