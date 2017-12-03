@@ -1,0 +1,1 @@
+this is a just a fun little experiment. the entire state of the application is stored in the url as json that's been gzipped and stringified. thus the user's data is not dependent on a server to be persisted, and can be shared with anyone. of course, the maximum length of a url is a limitation here, and that's why it's just an experiment.
