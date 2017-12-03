@@ -49,10 +49,9 @@ function addTask(task) {
 }
 
 function completeTask(task) {
-    state.tasks = state.tasks.filter(task => task.name === task).map(task => {
-        task.completed = true;
-        return task;
-    });
+    state.tasks = state.tasks
+        .filter(task => task.name === task)
+        .map(task => ({ ...task, completed: true }));
     render();
 }
 
